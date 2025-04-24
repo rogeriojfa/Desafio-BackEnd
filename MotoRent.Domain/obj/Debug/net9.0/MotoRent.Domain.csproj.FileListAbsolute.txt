@@ -1,0 +1,12 @@
+C:\Projetos\Desafio-BackEnd\MotoRent.Domain\bin\Debug\net9.0\MotoRent.Domain.deps.json
+C:\Projetos\Desafio-BackEnd\MotoRent.Domain\bin\Debug\net9.0\MotoRent.Domain.dll
+C:\Projetos\Desafio-BackEnd\MotoRent.Domain\bin\Debug\net9.0\MotoRent.Domain.pdb
+C:\Projetos\Desafio-BackEnd\MotoRent.Domain\obj\Debug\net9.0\MotoRent.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projetos\Desafio-BackEnd\MotoRent.Domain\obj\Debug\net9.0\MotoRent.Domain.AssemblyInfoInputs.cache
+C:\Projetos\Desafio-BackEnd\MotoRent.Domain\obj\Debug\net9.0\MotoRent.Domain.AssemblyInfo.cs
+C:\Projetos\Desafio-BackEnd\MotoRent.Domain\obj\Debug\net9.0\MotoRent.Domain.csproj.CoreCompileInputs.cache
+C:\Projetos\Desafio-BackEnd\MotoRent.Domain\obj\Debug\net9.0\MotoRent.Domain.sourcelink.json
+C:\Projetos\Desafio-BackEnd\MotoRent.Domain\obj\Debug\net9.0\MotoRent.Domain.dll
+C:\Projetos\Desafio-BackEnd\MotoRent.Domain\obj\Debug\net9.0\refint\MotoRent.Domain.dll
+C:\Projetos\Desafio-BackEnd\MotoRent.Domain\obj\Debug\net9.0\MotoRent.Domain.pdb
+C:\Projetos\Desafio-BackEnd\MotoRent.Domain\obj\Debug\net9.0\ref\MotoRent.Domain.dll
