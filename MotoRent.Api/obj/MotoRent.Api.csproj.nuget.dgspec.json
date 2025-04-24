@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Projetos\\Desafio-BackEnd\\motorent.api\\MotoRent.Api.csproj": {}
+    "c:\\Projetos\\Desafio-BackEnd\\MotoRent.Api\\MotoRent.Api.csproj": {}
   },
   "projects": {
-    "C:\\Projetos\\Desafio-BackEnd\\motorent.api\\MotoRent.Api.csproj": {
+    "c:\\Projetos\\Desafio-BackEnd\\MotoRent.Api\\MotoRent.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projetos\\Desafio-BackEnd\\motorent.api\\MotoRent.Api.csproj",
+        "projectUniqueName": "c:\\Projetos\\Desafio-BackEnd\\MotoRent.Api\\MotoRent.Api.csproj",
         "projectName": "MotoRent.Api",
-        "projectPath": "C:\\Projetos\\Desafio-BackEnd\\motorent.api\\MotoRent.Api.csproj",
+        "projectPath": "c:\\Projetos\\Desafio-BackEnd\\MotoRent.Api\\MotoRent.Api.csproj",
         "packagesPath": "C:\\Users\\roger\\.nuget\\packages\\",
-        "outputPath": "C:\\Projetos\\Desafio-BackEnd\\motorent.api\\obj\\",
+        "outputPath": "c:\\Projetos\\Desafio-BackEnd\\MotoRent.Api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -33,11 +33,11 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Application\\MotoRent.Application.csproj": {
-                "projectPath": "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Application\\MotoRent.Application.csproj"
+              "c:\\Projetos\\Desafio-BackEnd\\MotoRent.Application\\MotoRent.Application.csproj": {
+                "projectPath": "c:\\Projetos\\Desafio-BackEnd\\MotoRent.Application\\MotoRent.Application.csproj"
               },
-              "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Infrastructure\\MotoRent.Infrastructure.csproj": {
-                "projectPath": "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Infrastructure\\MotoRent.Infrastructure.csproj"
+              "c:\\Projetos\\Desafio-BackEnd\\MotoRent.Infrastructure\\MotoRent.Infrastructure.csproj": {
+                "projectPath": "c:\\Projetos\\Desafio-BackEnd\\MotoRent.Infrastructure\\MotoRent.Infrastructure.csproj"
               }
             }
           }
@@ -70,9 +70,15 @@
               "target": "Package",
               "version": "[9.0.4, )"
             },
-            "MongoDB.Bson": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
-              "version": "[3.3.0, )"
+              "version": "[9.0.4, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[9.0.4, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
@@ -102,14 +108,14 @@
         }
       }
     },
-    "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Application\\MotoRent.Application.csproj": {
+    "c:\\Projetos\\Desafio-BackEnd\\MotoRent.Application\\MotoRent.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Application\\MotoRent.Application.csproj",
+        "projectUniqueName": "c:\\Projetos\\Desafio-BackEnd\\MotoRent.Application\\MotoRent.Application.csproj",
         "projectName": "MotoRent.Application",
-        "projectPath": "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Application\\MotoRent.Application.csproj",
+        "projectPath": "c:\\Projetos\\Desafio-BackEnd\\MotoRent.Application\\MotoRent.Application.csproj",
         "packagesPath": "C:\\Users\\roger\\.nuget\\packages\\",
-        "outputPath": "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Application\\obj\\",
+        "outputPath": "c:\\Projetos\\Desafio-BackEnd\\MotoRent.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -131,8 +137,8 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Domain\\MotoRent.Domain.csproj": {
-                "projectPath": "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Domain\\MotoRent.Domain.csproj"
+              "c:\\Projetos\\Desafio-BackEnd\\MotoRent.Domain\\MotoRent.Domain.csproj": {
+                "projectPath": "c:\\Projetos\\Desafio-BackEnd\\MotoRent.Domain\\MotoRent.Domain.csproj"
               }
             }
           }
@@ -182,14 +188,14 @@
         }
       }
     },
-    "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Domain\\MotoRent.Domain.csproj": {
+    "c:\\Projetos\\Desafio-BackEnd\\MotoRent.Domain\\MotoRent.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Domain\\MotoRent.Domain.csproj",
+        "projectUniqueName": "c:\\Projetos\\Desafio-BackEnd\\MotoRent.Domain\\MotoRent.Domain.csproj",
         "projectName": "MotoRent.Domain",
-        "projectPath": "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Domain\\MotoRent.Domain.csproj",
+        "projectPath": "c:\\Projetos\\Desafio-BackEnd\\MotoRent.Domain\\MotoRent.Domain.csproj",
         "packagesPath": "C:\\Users\\roger\\.nuget\\packages\\",
-        "outputPath": "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Domain\\obj\\",
+        "outputPath": "c:\\Projetos\\Desafio-BackEnd\\MotoRent.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -248,14 +254,14 @@
         }
       }
     },
-    "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Infrastructure\\MotoRent.Infrastructure.csproj": {
+    "c:\\Projetos\\Desafio-BackEnd\\MotoRent.Infrastructure\\MotoRent.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Infrastructure\\MotoRent.Infrastructure.csproj",
+        "projectUniqueName": "c:\\Projetos\\Desafio-BackEnd\\MotoRent.Infrastructure\\MotoRent.Infrastructure.csproj",
         "projectName": "MotoRent.Infrastructure",
-        "projectPath": "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Infrastructure\\MotoRent.Infrastructure.csproj",
+        "projectPath": "c:\\Projetos\\Desafio-BackEnd\\MotoRent.Infrastructure\\MotoRent.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\roger\\.nuget\\packages\\",
-        "outputPath": "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Infrastructure\\obj\\",
+        "outputPath": "c:\\Projetos\\Desafio-BackEnd\\MotoRent.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -277,11 +283,11 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Application\\MotoRent.Application.csproj": {
-                "projectPath": "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Application\\MotoRent.Application.csproj"
+              "c:\\Projetos\\Desafio-BackEnd\\MotoRent.Application\\MotoRent.Application.csproj": {
+                "projectPath": "c:\\Projetos\\Desafio-BackEnd\\MotoRent.Application\\MotoRent.Application.csproj"
               },
-              "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Domain\\MotoRent.Domain.csproj": {
-                "projectPath": "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Domain\\MotoRent.Domain.csproj"
+              "c:\\Projetos\\Desafio-BackEnd\\MotoRent.Domain\\MotoRent.Domain.csproj": {
+                "projectPath": "c:\\Projetos\\Desafio-BackEnd\\MotoRent.Domain\\MotoRent.Domain.csproj"
               }
             }
           }
@@ -310,9 +316,13 @@
               "target": "Package",
               "version": "[8.4.0, )"
             },
-            "MongoDB.Driver": {
+            "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[3.3.0, )"
+              "version": "[9.0.4, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[9.0.4, )"
             }
           },
           "imports": [

@@ -6,6 +6,7 @@ namespace MotoRent.Application.Interfaces
     {
         Task AddAsync(Moto moto);
         Task<Moto?> GetByLicensePlateAsync(string licensePlate);
+        Task<Moto?> GetByIdAsync(string id);
         Task<IEnumerable<Moto>> GetAllAsync();
         Task UpdatePlateAsync(Guid id, string newPlate);
         Task DeleteAsync(Guid id);

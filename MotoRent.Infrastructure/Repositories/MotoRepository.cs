@@ -1,40 +1,60 @@
-using MongoDB.Driver;
+using Microsoft.EntityFrameworkCore;
 using MotoRent.Application.Interfaces;
 using MotoRent.Domain.Entities;
-
-namespace MotoRent.Infrastructure.Repositories;
+using MotoRent.Infrastructure.Data;
 
 public class MotoRepository : IMotoRepository
 {
-    private readonly IMongoCollection<Moto> _motos;
+    private readonly MotoRentDbContext _context;
 
-    public MotoRepository(IMongoDatabase database)
+    public MotoRepository(MotoRentDbContext context)
     {
-        _motos = database.GetCollection<Moto>("motos");
+        _context = context;
     }
 
-    public Task AddAsync(Moto moto) => _motos.InsertOneAsync(moto);
+    public async Task AddAsync(Moto moto)
+    {
+        await _context.Motos.AddAsync(moto);
+        await _context.SaveChangesAsync();
+    }
 
     public async Task<Moto?> GetByLicensePlateAsync(string licensePlate)
     {
-        return await _motos.Find(m => m.Plate == licensePlate).FirstOrDefaultAsync();
+        return await _context.Motos.FirstOrDefaultAsync(m => m.Plate == licensePlate);
     }
 
     public async Task<IEnumerable<Moto>> GetAllAsync()
     {
-        return await _motos.Find(_ => true).ToListAsync();
+        return await _context.Motos.ToListAsync();
     }
 
-    public Task UpdatePlateAsync(Guid id, string newPlate) =>
-        _motos.UpdateOneAsync(x => x.Id == id,
-            Builders<Moto>.Update.Set(m => m.Plate, newPlate));
-
-    public Task DeleteAsync(Guid id) =>
-        _motos.DeleteOneAsync(x => x.Id == id);
-
-    public Task<bool> HasAnyRentalAsync(Guid id)
+    public async Task UpdatePlateAsync(Guid id, string newPlate)
     {
-        // Simulação. Implementar integração com repositório de locações
-        return Task.FromResult(false);
+        var moto = await _context.Motos.FindAsync(id);
+        if (moto != null)
+        {
+            moto.Plate = newPlate;
+            await _context.SaveChangesAsync();
+        }
+    }
+
+    public async Task DeleteAsync(Guid id)
+    {
+        var moto = await _context.Motos.FindAsync(id);
+        if (moto != null)
+        {
+            _context.Motos.Remove(moto);
+            await _context.SaveChangesAsync();
+        }
+    }
+
+    public async Task<bool> HasAnyRentalAsync(Guid id)
+    {
+        return await _context.Rentals.AnyAsync(r => r.MotoId == id);
+    }
+
+    public async Task<Moto?> GetByIdAsync(string id)
+    {
+        return await _context.Motos.FirstOrDefaultAsync(m => m.Id.ToString() == id);
     }
 }

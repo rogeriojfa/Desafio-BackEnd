@@ -1,153 +1,107 @@
+using MotoRent.Application.DTOs;
 using MotoRent.Application.Interfaces;
-using MotoRent.Domain.Entities;
-using MotoRent.Domain.Services;
-
-namespace MotoRent.Application.Services;
 
 public class RentalService : IRentalService
 {
-    private readonly IRentalRepository _repository;
-    private readonly RentalCalculator _calculator;
+    private readonly IRentalRepository _rentalRepository;
 
-    public RentalService(IRentalRepository repository)
+    public RentalService(IRentalRepository rentalRepository)
     {
-        _repository = repository;
-        _calculator = new RentalCalculator();
+        _rentalRepository = rentalRepository;
     }
 
-    public async Task<RentalResponse> CreateAsync(CreateRentalRequest request)
+    public async Task<Rental> CreateRentalAsync(Rental rental)
+    {
+        await _rentalRepository.AddAsync(rental);
+        return rental;
+    }
+
+    public async Task<Rental?> GetRentalByIdAsync(Guid id)
+    {
+        return await _rentalRepository.GetByIdAsync(id);
+    }
+
+    public async Task CompleteRentalAsync(Guid rentalId, DateTime actualEndDate)
+    {
+        var rental = await _rentalRepository.GetByIdAsync(rentalId);
+
+        if (rental == null)
+            throw new Exception("Locação não encontrada.");
+
+        rental.ActualEndDate = actualEndDate;
+
+        // Exemplo de cálculo de preço final
+        var baseValue = rental.CalculateBaseValue();
+        var finalPrice = baseValue;
+
+        if (rental.IsEarly)
         {
-            // 1. Validar o entregador
-            var deliveryman = await _deliverymanRepository.GetByIdAsync(request.DeliverymanId);
-            if (deliveryman == null)
-                throw new ArgumentException("Entregador não encontrado.");
-
-            if (deliveryman.CnhType != "A" && deliveryman.CnhType != "A+B")
-                throw new ArgumentException("Entregador deve possuir CNH do tipo A ou A+B.");
-
-            // 2. Validar a moto
-            var moto = await _motoRepository.GetByIdAsync(request.MotoId);
-            if (moto == null)
-                throw new ArgumentException("Moto não encontrada.");
-
-            if (await _motoRepository.HasAnyRentalAsync(request.MotoId))
-                throw new ArgumentException("Moto já está em uso.");
-
-            // 3. Validar a data de início
-            if (request.StartDate.Date <= DateTime.Now.Date)
-                throw new ArgumentException("A data de início deve ser o dia seguinte à data atual.");
-
-            // 4. Validar o plano de dias
-            var validPlanDays = new[] { 7, 15, 30, 45, 50 };
-            if (!validPlanDays.Contains(request.PlanDays))
-                throw new ArgumentException("Plano de dias inválido. Os planos disponíveis são: 7, 15, 30, 45 ou 50 dias.");
-
-            // 5. Calcular a data de término esperada
-            var expectedEndDate = request.StartDate.AddDays(request.PlanDays);
-
-            // 6. Criar a locação
-            var rental = new Rental
-            {
-                DeliverymanId = request.DeliverymanId,
-                MotoId = request.MotoId,
-                PlanDays = request.PlanDays,
-                StartDate = request.StartDate,
-                ExpectedEndDate = expectedEndDate
-            };
-
-            await _rentalRepository.AddAsync(rental);
-
-            // 7. Retornar o resultado
-            var rentalResponse = new RentalResponse
-            {
-                Id = rental.Id,
-                DeliverymanId = rental.DeliverymanId,
-                MotoId = rental.MotoId,
-                PlanDays = rental.PlanDays,
-                StartDate = rental.StartDate,
-                ExpectedEndDate = rental.ExpectedEndDate
-            };
-
-            return rentalResponse;
+            var unusedDays = (rental.ExpectedEndDate - actualEndDate).Days;
+            var penaltyRate = rental.PlanDays == 7 ? 0.2m : 0.4m;
+            var penalty = unusedDays * rental.DailyRate * penaltyRate;
+            finalPrice += penalty;
+        }
+        else if (rental.IsLate)
+        {
+            var extraDays = (actualEndDate - rental.ExpectedEndDate).Days;
+            var fee = extraDays * 50m;
+            finalPrice += fee;
         }
 
-public async Task<RentalResponse> CompleteRentalAsync(Guid rentalId, DateTime returnDate)
-{
-    // 1. Obter a locação
-    var rental = await _rentalRepository.GetByIdAsync(rentalId);
-    if (rental == null)
-        throw new ArgumentException("Locação não encontrada.");
+        rental.TotalPrice = finalPrice;
 
-    // 2. Verificar se a data de devolução é válida
-    if (returnDate < rental.StartDate)
-        throw new ArgumentException("A data de devolução não pode ser anterior à data de início.");
+        await _rentalRepository.UpdateAsync(rental);
+    }
 
-    // 3. Calcular o valor total da locação
-    decimal totalPrice = CalculateTotalPrice(rental, returnDate);
-
-    // 4. Atualizar a locação com a data de devolução e o valor total
-    rental.ActualEndDate = returnDate;
-    rental.TotalPrice = totalPrice;
-
-    await _rentalRepository.UpdateAsync(rental);
-
-    // 5. Retornar a locação com os detalhes
-    var rentalResponse = new RentalResponse
+    async Task<RentalResponse> IRentalService.CompleteRentalAsync(Guid rentalId, DateTime actualEndDate)
     {
-        Id = rental.Id,
-        DeliverymanId = rental.DeliverymanId,
-        MotoId = rental.MotoId,
-        PlanDays = rental.PlanDays,
-        StartDate = rental.StartDate,
-        ExpectedEndDate = rental.ExpectedEndDate,
-        ActualEndDate = rental.ActualEndDate,
-        TotalPrice = rental.TotalPrice
-    };
+        var rental = await _rentalRepository.GetByIdAsync(rentalId);
 
-    return rentalResponse;
-}
+        if (rental == null)
+            throw new Exception("Locação não encontrada.");
 
-private decimal CalculateTotalPrice(Rental rental, DateTime returnDate)
-{
-    // 6. Verificar o plano de dias e calcular o valor total
-    var planPricePerDay = rental.PlanDays switch
-    {
-        7 => 30m,
-        15 => 28m,
-        30 => 22m,
-        45 => 20m,
-        50 => 18m,
-        _ => 0m
-    };
+        rental.ActualEndDate = actualEndDate;
 
-    var totalPrice = rental.PlanDays * planPricePerDay;
+        var baseValue = rental.CalculateBaseValue();
+        var finalPrice = baseValue;
 
-    // 7. Verificar se há multa por devolução antecipada
-    if (returnDate < rental.ExpectedEndDate)
-    {
-        var daysNotUsed = (rental.ExpectedEndDate - returnDate).Days;
-        decimal penaltyPercentage = rental.PlanDays switch
+        if (rental.IsEarly)
         {
-            7 => 0.20m, // 20% de multa
-            15 => 0.40m, // 40% de multa
-            _ => 0m
+            var unusedDays = (rental.ExpectedEndDate - actualEndDate).Days;
+            var penaltyRate = rental.PlanDays == 7 ? 0.2m : 0.4m;
+            finalPrice += unusedDays * rental.DailyRate * penaltyRate;
+        }
+        else if (rental.IsLate)
+        {
+            var extraDays = (actualEndDate - rental.ExpectedEndDate).Days;
+            finalPrice += extraDays * 50m;
+        }
+
+        rental.TotalPrice = finalPrice;
+        await _rentalRepository.UpdateAsync(rental);
+
+        return new RentalResponse
+        {
+            Id = rental.Id,
+            StartDate = rental.StartDate,
+            ExpectedEndDate = rental.ExpectedEndDate,
+            ActualEndDate = rental.ActualEndDate,
+            TotalPrice = rental.TotalPrice
         };
-
-        var penalty = (daysNotUsed * planPricePerDay) * penaltyPercentage;
-        totalPrice -= penalty;
     }
 
-    // 8. Verificar se há valor adicional por devolução tardia
-    if (returnDate > rental.ExpectedEndDate)
+    public Task<Rental?> FinishRentalAsync(Guid rentalId, DateTime realEndDate)
     {
-        var daysLate = (returnDate - rental.ExpectedEndDate).Days;
-        totalPrice += daysLate * 50m; // R$50 por dia de atraso
+        throw new NotImplementedException();
     }
 
-    return totalPrice;
-}
+    public Task<IEnumerable<Rental>> GetAllAsync()
+    {
+        throw new NotImplementedException();
+    }
 
-
-    public Task<IEnumerable<Rental>> GetAllAsync() => _repository.GetAllAsync();
-    public Task<Rental?> GetByIdAsync(Guid id) => _repository.GetByIdAsync(id);
+    public Task<Rental?> GetByIdAsync(Guid id)
+    {
+        throw new NotImplementedException();
+    }
 }

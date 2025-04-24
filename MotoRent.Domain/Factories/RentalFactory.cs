@@ -5,9 +5,9 @@ namespace MotoRent.Domain.Factories;
 
 public static class RentalFactory
 {
-    public static Rental Create(Guid motoId, DeliveryMan deliveryMan, RentalPlan plan)
+    public static Rental Create(Guid motoId, Deliveryman deliveryman, RentalPlan plan)
     {
-        if (deliveryMan.CnhType != CnhType.A && deliveryMan.CnhType != CnhType.AB)
+        if (deliveryman.CnhType != CnhType.A && deliveryman.CnhType != CnhType.AB)
             throw new InvalidOperationException("Entregador não habilitado com CNH tipo A.");
 
         var startDate = DateTime.UtcNow.Date.AddDays(1);
@@ -25,10 +25,10 @@ public static class RentalFactory
         return new Rental
         {
             MotoId = motoId,
-            DeliveryManId = deliveryMan.Id,
+            DeliverymanId = deliveryman.Id,
             StartDate = startDate,
             ExpectedEndDate = startDate.AddDays(days),
-            Days = days,
+            PlanDays = days,
             DailyRate = rate
         };
     }

@@ -1,35 +1,34 @@
 using MassTransit;
-using MongoDB.Driver;
-using MotoRent.Domain.Entities;
 using MotoRent.Application.Events;
+using MotoRent.Application.Interfaces;
+using MotoRent.Domain.Entities;
 
-namespace MotoRent.Infrastructure.Messaging.Consumers;
-
-public class MotoCreatedConsumer : IConsumer<MotoRegisteredEvent>
+public class MotoCreatedConsumer : IConsumer<MotoCreatedEvent>
 {
-    private readonly IMongoCollection<Moto> _collection;
+    private readonly IMotoRepository _motoRepository;
 
-    public MotoCreatedConsumer(IMongoClient mongoClient)
+    public MotoCreatedConsumer(IMotoRepository motoRepository)
     {
-        var db = mongoClient.GetDatabase("motorent");
-        _collection = db.GetCollection<Moto>("motos2024"); // salva separado
+        _motoRepository = motoRepository;
     }
 
-    public async Task Consume(ConsumeContext<MotoRegisteredEvent> context)
+    public async Task Consume(ConsumeContext<MotoCreatedEvent> context)
     {
-        var message = context.Message;
-
-        if (message.Year == 2024)
+        var motoCreatedEvent = context.Message;
+        
+        // Crie o novo objeto Moto a partir do evento
+        var moto = new Moto
         {
-            var moto = new Moto
-            {
-                Id = message.Id,
-                Year = message.Year,
-                Model = message.Model,
-                Plate = message.Plate
-            };
+            Id = motoCreatedEvent.Id,
+            Plate = motoCreatedEvent.Plate,
+            Model = motoCreatedEvent.Model,
+            Year = motoCreatedEvent.Year
+        };
 
-            await _collection.InsertOneAsync(moto);
-        }
+        // Salve no repositório, que agora é PostgreSQL
+        await _motoRepository.AddAsync(moto);
+        
+        // Caso precise, pode publicar outro evento ou realizar alguma ação adicional
+        // Ex: _bus.Publish(new MotoCreatedConfirmationEvent());
     }
 }

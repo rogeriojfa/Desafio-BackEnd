@@ -1,28 +1,51 @@
-using MongoDB.Driver;
-using MotoRent.Domain.Entities;
 using MotoRent.Application.Interfaces;
+using MotoRent.Domain.Entities;
+using Microsoft.EntityFrameworkCore;
+using MotoRent.Infrastructure.Data;
 
 namespace MotoRent.Infrastructure.Repositories;
 
 public class RentalRepository : IRentalRepository
 {
-    private readonly IMongoCollection<Rental> _rentals;
+    private readonly MotoRentDbContext _context;
 
-    public RentalRepository(IMongoClient client)
+    public RentalRepository(MotoRentDbContext context)
     {
-        var db = client.GetDatabase("motorent");
-        _rentals = db.GetCollection<Rental>("rentals");
+        _context = context;
     }
 
-    public Task AddAsync(Rental rental) =>
-        _rentals.InsertOneAsync(rental);
+    public async Task AddAsync(Rental rental)
+    {
+        await _context.Rentals.AddAsync(rental);
+        await _context.SaveChangesAsync();
+    }
 
-    public async Task<Rental?> GetByIdAsync(Guid id) =>
-        await _rentals.Find(x => x.Id == id).FirstOrDefaultAsync();
+    public async Task<Rental?> GetByIdAsync(Guid id)
+    {
+        return await _context.Rentals.FindAsync(id);
+    }
 
-    public Task<IEnumerable<Rental>> GetAllAsync() =>
-        Task.FromResult(_rentals.Find(_ => true).ToEnumerable());
+    public async Task<IEnumerable<Rental>> GetAllAsync()
+    {
+        return await _context.Rentals.ToListAsync();
+    }
 
-    public Task UpdateAsync(Rental rental) =>
-        _rentals.ReplaceOneAsync(x => x.Id == rental.Id, rental);
+    public async Task<IEnumerable<Rental>> GetByDeliverymanIdAsync(Guid deliverymanId)
+    {
+        return await _context.Rentals
+            .Where(r => r.DeliverymanId == deliverymanId)
+            .ToListAsync();
+    }
+
+    public async Task<Rental?> GetActiveRentalByMotoIdAsync(Guid motoId)
+    {
+        return await _context.Rentals
+            .FirstOrDefaultAsync(r => r.MotoId == motoId && r.ActualEndDate == null);
+    }
+
+    public async Task UpdateAsync(Rental rental)
+    {
+        _context.Rentals.Update(rental);
+        await _context.SaveChangesAsync();
+    }
 }

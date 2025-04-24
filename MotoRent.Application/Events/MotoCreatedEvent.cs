@@ -1,6 +1,6 @@
 namespace MotoRent.Application.Events
 {
-   public class MotoRegisteredEvent
+   public class MotoCreatedEvent
 {
     public Guid Id { get; set; }
     public int Year { get; set; }

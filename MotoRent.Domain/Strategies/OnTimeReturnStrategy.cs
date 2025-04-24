@@ -1,3 +1,5 @@
+using MotoRent.Domain.Entities;
+
 namespace MotoRent.Domain.Strategies;
 
 public class OnTimeReturnStrategy : IRentalCalculationStrategy

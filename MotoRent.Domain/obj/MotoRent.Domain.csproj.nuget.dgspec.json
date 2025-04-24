@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Domain\\MotoRent.Domain.csproj": {}
+    "c:\\Projetos\\Desafio-BackEnd\\MotoRent.Domain\\MotoRent.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Domain\\MotoRent.Domain.csproj": {
+    "c:\\Projetos\\Desafio-BackEnd\\MotoRent.Domain\\MotoRent.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Domain\\MotoRent.Domain.csproj",
+        "projectUniqueName": "c:\\Projetos\\Desafio-BackEnd\\MotoRent.Domain\\MotoRent.Domain.csproj",
         "projectName": "MotoRent.Domain",
-        "projectPath": "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Domain\\MotoRent.Domain.csproj",
+        "projectPath": "c:\\Projetos\\Desafio-BackEnd\\MotoRent.Domain\\MotoRent.Domain.csproj",
         "packagesPath": "C:\\Users\\roger\\.nuget\\packages\\",
-        "outputPath": "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Domain\\obj\\",
+        "outputPath": "c:\\Projetos\\Desafio-BackEnd\\MotoRent.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -18,7 +18,7 @@ public class RentalsController : ControllerBase
     [HttpPost]
     public async Task<IActionResult> Create([FromBody] Rental rental)
     {
-        var result = await _rentalService.CreateAsync(rental);
+        var result = await _rentalService.CreateRentalAsync(rental);
         return CreatedAtAction(nameof(GetById), new { id = result.Id }, result);
     }
 

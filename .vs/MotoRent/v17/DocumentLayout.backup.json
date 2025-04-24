@@ -25,10 +25,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{440BD559-87FE-459D-82B1-A0DAE95F8D9C}|MotoRent.Application\\MotoRent.Application.csproj|c:\\projetos\\desafio-backend\\motorent.application\\services\\motoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{440BD559-87FE-459D-82B1-A0DAE95F8D9C}|MotoRent.Application\\MotoRent.Application.csproj|solutionrelative:motorent.application\\services\\motoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A9B481A0-BB59-4F7F-8807-2318CDF5F5E7}|MotoRent.Infrastructure\\MotoRent.Infrastructure.csproj|c:\\projetos\\desafio-backend\\motorent.infrastructure\\repositories\\mongomotorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A9B481A0-BB59-4F7F-8807-2318CDF5F5E7}|MotoRent.Infrastructure\\MotoRent.Infrastructure.csproj|solutionrelative:motorent.infrastructure\\repositories\\mongomotorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -56,7 +52,7 @@
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "MotoRent.Api",
+              "Title": "MotoRent.Api.csproj",
               "DocumentMoniker": "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Api\\MotoRent.Api.csproj",
               "RelativeDocumentMoniker": "MotoRent.Api\\MotoRent.Api.csproj",
               "ToolTip": "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Api\\MotoRent.Api.csproj",
@@ -72,9 +68,9 @@
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Api\\Program.cs",
               "RelativeDocumentMoniker": "MotoRent.Api\\Program.cs",
-              "ToolTip": "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Api\\Program.cs*",
-              "RelativeToolTip": "MotoRent.Api\\Program.cs*",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ToolTip": "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Api\\Program.cs",
+              "RelativeToolTip": "MotoRent.Api\\Program.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAACgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-24T04:24:40.254Z",
               "EditorCaption": ""
@@ -92,19 +88,7 @@
               "WhenOpened": "2025-04-24T04:24:37.397Z",
               "EditorCaption": ""
             },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "MongoMotoRepository.cs",
-              "DocumentMoniker": "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Infrastructure\\Repositories\\MongoMotoRepository.cs",
-              "RelativeDocumentMoniker": "MotoRent.Infrastructure\\Repositories\\MongoMotoRepository.cs",
-              "ToolTip": "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Infrastructure\\Repositories\\MongoMotoRepository.cs",
-              "RelativeToolTip": "MotoRent.Infrastructure\\Repositories\\MongoMotoRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-24T04:24:15.633Z",
-              "EditorCaption": ""
-            },
+            
             {
               "$type": "Document",
               "DocumentIndex": 5,
@@ -113,7 +97,7 @@
               "RelativeDocumentMoniker": "MotoRent.Application\\Services\\MotoService.cs",
               "ToolTip": "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Application\\Services\\MotoService.cs",
               "RelativeToolTip": "MotoRent.Application\\Services\\MotoService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwA4AAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwA4AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-24T04:18:26.427Z",
               "EditorCaption": ""
