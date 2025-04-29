@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Projetos\\Desafio-BackEnd\\MotoRent.Application\\MotoRent.Application.csproj": {}
+    "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Application\\MotoRent.Application.csproj": {}
   },
   "projects": {
-    "c:\\Projetos\\Desafio-BackEnd\\MotoRent.Application\\MotoRent.Application.csproj": {
+    "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Application\\MotoRent.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Projetos\\Desafio-BackEnd\\MotoRent.Application\\MotoRent.Application.csproj",
+        "projectUniqueName": "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Application\\MotoRent.Application.csproj",
         "projectName": "MotoRent.Application",
-        "projectPath": "c:\\Projetos\\Desafio-BackEnd\\MotoRent.Application\\MotoRent.Application.csproj",
+        "projectPath": "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Application\\MotoRent.Application.csproj",
         "packagesPath": "C:\\Users\\roger\\.nuget\\packages\\",
-        "outputPath": "c:\\Projetos\\Desafio-BackEnd\\MotoRent.Application\\obj\\",
+        "outputPath": "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -33,8 +33,8 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "c:\\Projetos\\Desafio-BackEnd\\MotoRent.Domain\\MotoRent.Domain.csproj": {
-                "projectPath": "c:\\Projetos\\Desafio-BackEnd\\MotoRent.Domain\\MotoRent.Domain.csproj"
+              "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Domain\\MotoRent.Domain.csproj": {
+                "projectPath": "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Domain\\MotoRent.Domain.csproj"
               }
             }
           }
@@ -55,6 +55,10 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
+            "BCrypt.Net-Next": {
+              "target": "Package",
+              "version": "[4.0.3, )"
+            },
             "FluentValidation": {
               "target": "Package",
               "version": "[11.11.0, )"
@@ -62,6 +66,10 @@
             "MassTransit": {
               "target": "Package",
               "version": "[8.4.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[9.0.4, )"
             }
           },
           "imports": [
@@ -84,14 +92,14 @@
         }
       }
     },
-    "c:\\Projetos\\Desafio-BackEnd\\MotoRent.Domain\\MotoRent.Domain.csproj": {
+    "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Domain\\MotoRent.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Projetos\\Desafio-BackEnd\\MotoRent.Domain\\MotoRent.Domain.csproj",
+        "projectUniqueName": "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Domain\\MotoRent.Domain.csproj",
         "projectName": "MotoRent.Domain",
-        "projectPath": "c:\\Projetos\\Desafio-BackEnd\\MotoRent.Domain\\MotoRent.Domain.csproj",
+        "projectPath": "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Domain\\MotoRent.Domain.csproj",
         "packagesPath": "C:\\Users\\roger\\.nuget\\packages\\",
-        "outputPath": "c:\\Projetos\\Desafio-BackEnd\\MotoRent.Domain\\obj\\",
+        "outputPath": "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

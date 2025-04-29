@@ -1,5 +1,5 @@
+using MassTransit;
 using Microsoft.EntityFrameworkCore;
-using MotoRent.Application.Interfaces;
 using MotoRent.Domain.Entities;
 using MotoRent.Infrastructure.Data;
 
@@ -53,8 +53,14 @@ public class MotoRepository : IMotoRepository
         return await _context.Rentals.AnyAsync(r => r.MotoId == id);
     }
 
-    public async Task<Moto?> GetByIdAsync(string id)
+    public async Task<Moto?> GetByIdAsync(Guid id)
     {
-        return await _context.Motos.FirstOrDefaultAsync(m => m.Id.ToString() == id);
+        return await _context.Motos.FirstOrDefaultAsync(m => m.Id == id);
+    }
+
+    public async Task UpdateAsync(Moto moto)
+    {
+        _context.Motos.Update(moto);
+        await _context.SaveChangesAsync();
     }
 }

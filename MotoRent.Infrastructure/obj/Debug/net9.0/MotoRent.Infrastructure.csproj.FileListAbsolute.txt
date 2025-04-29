@@ -16,3 +16,5 @@ C:\Projetos\Desafio-BackEnd\MotoRent.Infrastructure\obj\Debug\net9.0\MotoRent.In
 C:\Projetos\Desafio-BackEnd\MotoRent.Infrastructure\obj\Debug\net9.0\refint\MotoRent.Infrastructure.dll
 C:\Projetos\Desafio-BackEnd\MotoRent.Infrastructure\obj\Debug\net9.0\MotoRent.Infrastructure.pdb
 C:\Projetos\Desafio-BackEnd\MotoRent.Infrastructure\obj\Debug\net9.0\ref\MotoRent.Infrastructure.dll
+C:\Projetos\Desafio-BackEnd\motorent.infrastructure\bin\Debug\net9.0\MotoRent.Infrastructure.runtimeconfig.json
+C:\Projetos\Desafio-BackEnd\motorent.infrastructure\obj\Debug\net9.0\MotoRent.Infrastructure.genruntimeconfig.cache

@@ -4,6 +4,569 @@
     "title": "MotoRent.Api",
     "version": "1.0"
   },
-  "paths": { },
-  "components": { }
+  "paths": {
+    "/api/motos": {
+      "post": {
+        "tags": [
+          "Motos"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateMotoRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateMotoRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateMotoRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "Motos"
+        ],
+        "parameters": [
+          {
+            "name": "licensePlate",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/motos/{rentalId}/complete": {
+      "put": {
+        "tags": [
+          "Motos"
+        ],
+        "parameters": [
+          {
+            "name": "rentalId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CompleteRentalRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CompleteRentalRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CompleteRentalRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/RentalResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RentalResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RentalResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/rentals": {
+      "post": {
+        "tags": [
+          "Rentals"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Rental"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Rental"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Rental"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "Rentals"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/rentals/{id}/finish": {
+      "patch": {
+        "tags": [
+          "Rentals"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          },
+          {
+            "name": "realEndDate",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "date-time"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/rentals/{id}": {
+      "get": {
+        "tags": [
+          "Rentals"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/user": {
+      "post": {
+        "tags": [
+          "User"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateUserDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateUserDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateUserDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "User"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/user/login": {
+      "post": {
+        "tags": [
+          "User"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/user/{id}": {
+      "get": {
+        "tags": [
+          "User"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "User"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateUserDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateUserDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateUserDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "User"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "CompleteRentalRequest": {
+        "type": "object",
+        "properties": {
+          "returnDate": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false
+      },
+      "CreateMotoRequest": {
+        "type": "object",
+        "properties": {
+          "year": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "model": {
+            "type": "string",
+            "nullable": true
+          },
+          "plate": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "CreateUserDto": {
+        "required": [
+          "email",
+          "name",
+          "password"
+        ],
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "password": {
+            "type": "string",
+            "nullable": true
+          },
+          "role": {
+            "$ref": "#/components/schemas/UserRole"
+          }
+        },
+        "additionalProperties": false
+      },
+      "LoginDto": {
+        "required": [
+          "email",
+          "password"
+        ],
+        "type": "object",
+        "properties": {
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "password": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Rental": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "deliverymanId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "motoId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "startDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "expectedEndDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "actualEndDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "planDays": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "dailyRate": {
+            "type": "number",
+            "format": "double"
+          },
+          "totalPrice": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "status": {
+            "$ref": "#/components/schemas/RentalStatus"
+          },
+          "isLate": {
+            "type": "boolean",
+            "readOnly": true
+          },
+          "isEarly": {
+            "type": "boolean",
+            "readOnly": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "RentalResponse": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "deliverymanId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "motoId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "planDays": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "startDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "expectedEndDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "actualEndDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "totalPrice": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "RentalStatus": {
+        "enum": [
+          0,
+          1
+        ],
+        "type": "integer",
+        "format": "int32"
+      },
+      "UpdateUserDto": {
+        "required": [
+          "name"
+        ],
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "role": {
+            "$ref": "#/components/schemas/UserRole"
+          }
+        },
+        "additionalProperties": false
+      },
+      "UserRole": {
+        "enum": [
+          0,
+          1
+        ],
+        "type": "integer",
+        "format": "int32"
+      }
+    }
+  }
 }

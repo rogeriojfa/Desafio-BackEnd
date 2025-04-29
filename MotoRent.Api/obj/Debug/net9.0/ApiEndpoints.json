@@ -1,1 +1,223 @@
-[]
+[
+  {
+    "ContainingType": "MotosController",
+    "Method": "Register",
+    "RelativePath": "api/motos",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "CreateMotoRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotosController",
+    "Method": "GetByLicensePlate",
+    "RelativePath": "api/motos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "licensePlate",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotosController",
+    "Method": "CompleteRental",
+    "RelativePath": "api/motos/{rentalId}/complete",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "rentalId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "CompleteRentalRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MotoRent.Application.DTOs.RentalResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MotoRent.API.Controllers.RentalsController",
+    "Method": "Create",
+    "RelativePath": "api/rentals",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "rental",
+        "Type": "Rental",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRent.API.Controllers.RentalsController",
+    "Method": "GetAll",
+    "RelativePath": "api/rentals",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRent.API.Controllers.RentalsController",
+    "Method": "GetById",
+    "RelativePath": "api/rentals/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRent.API.Controllers.RentalsController",
+    "Method": "Finish",
+    "RelativePath": "api/rentals/{id}/finish",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "realEndDate",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRent.Controllers.UserController",
+    "Method": "Create",
+    "RelativePath": "api/user",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "MotoRent.DTOs.CreateUserDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRent.Controllers.UserController",
+    "Method": "GetAll",
+    "RelativePath": "api/user",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRent.Controllers.UserController",
+    "Method": "GetById",
+    "RelativePath": "api/user/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRent.Controllers.UserController",
+    "Method": "Update",
+    "RelativePath": "api/user/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "MotoRent.DTOs.UpdateUserDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRent.Controllers.UserController",
+    "Method": "Delete",
+    "RelativePath": "api/user/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoRent.Controllers.UserController",
+    "Method": "Login",
+    "RelativePath": "api/user/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "loginDto",
+        "Type": "MotoRent.DTOs.LoginDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

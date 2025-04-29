@@ -66,6 +66,9 @@ namespace MotoRent.Infrastructure.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uuid");
 
+                    b.Property<bool>("IsAvailable")
+                        .HasColumnType("boolean");
+
                     b.Property<string>("Model")
                         .IsRequired()
                         .HasColumnType("text");
@@ -83,6 +86,42 @@ namespace MotoRent.Infrastructure.Migrations
                         .IsUnique();
 
                     b.ToTable("Motos");
+                });
+
+            modelBuilder.Entity("MotoRent.Domain.Entities.User", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("PasswordHash")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<int>("Role")
+                        .HasColumnType("integer");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Users");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = new Guid("a1f5a1d0-57d8-4a3c-9999-123456789abc"),
+                            Email = "admin@motorrent.com",
+                            Name = "Administrator",
+                            PasswordHash = "$2a$11$kt3sttPZjh6qXrlOL9UPh.JeigGW4LwMuJw5W87LfrMXDO.vqobhy",
+                            Role = 0
+                        });
                 });
 
             modelBuilder.Entity("Rental", b =>
@@ -111,6 +150,9 @@ namespace MotoRent.Infrastructure.Migrations
 
                     b.Property<DateTime>("StartDate")
                         .HasColumnType("timestamp with time zone");
+
+                    b.Property<int>("Status")
+                        .HasColumnType("integer");
 
                     b.Property<decimal?>("TotalPrice")
                         .HasColumnType("numeric");

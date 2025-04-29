@@ -1,5 +1,6 @@
 using System.ComponentModel.DataAnnotations.Schema;
 using MotoRent.Domain.Entities;
+using MotoRent.Domain.Enums;
 
 public class Rental
 {
@@ -16,8 +17,7 @@ public class Rental
     public decimal DailyRate { get; set; }
     public decimal? TotalPrice { get; set; }
 
-    public Moto? Moto { get; set; }
-    public Deliveryman? Deliveryman { get; set; }
+    public RentalStatus Status { get; set; }
 
     [NotMapped]
     public bool IsLate => ActualEndDate.HasValue && ActualEndDate.Value > ExpectedEndDate;

@@ -1,4 +1,4 @@
-public class CompleteRentalRequest
+public class CompleteRentalRequest(DateTime returnDate)
 {
-    public DateTime ReturnDate { get; set; }
+    public DateTime ReturnDate { get; set; } = returnDate;
 }

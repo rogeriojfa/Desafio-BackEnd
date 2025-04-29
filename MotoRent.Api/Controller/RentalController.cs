@@ -25,7 +25,7 @@ public class RentalsController : ControllerBase
     [HttpPatch("{id}/finish")]
     public async Task<IActionResult> Finish(Guid id, [FromQuery] DateTime realEndDate)
     {
-        var result = await _rentalService.FinishRentalAsync(id, realEndDate);
+        var result = await _rentalService.FinishRentalAsync(id);
         if (result == null) return NotFound();
         return Ok(result);
     }
@@ -40,7 +40,7 @@ public class RentalsController : ControllerBase
     [HttpGet("{id}")]
     public async Task<IActionResult> GetById(Guid id)
     {
-        var rental = await _rentalService.GetByIdAsync(id);
+        var rental = await _rentalService.GetRentalByIdAsync(id);
         if (rental == null) return NotFound();
         return Ok(rental);
     }

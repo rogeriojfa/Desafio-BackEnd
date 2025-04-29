@@ -1,3 +1,5 @@
+using System.Security.Claims;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using MotoRent.Application.DTOs;
 using MotoRent.Application.Interfaces;
@@ -24,6 +26,18 @@ public class MotosController : ControllerBase
     [HttpPost]
     public async Task<IActionResult> Register([FromBody] CreateMotoRequest request)
     {
+
+         var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+
+        if (string.IsNullOrEmpty(userId))
+            return Unauthorized("Usuário não autenticado.");
+
+        var existingMoto = await _repository.GetByLicensePlateAsync(request.Plate);
+        if (existingMoto != null)
+        {
+            return BadRequest("Já existe uma moto cadastrada com essa placa.");
+        }
+
         var moto = new Moto
         {
             Id = Guid.NewGuid(),
@@ -32,6 +46,7 @@ public class MotosController : ControllerBase
             Plate = request.Plate
         };
 
+        
         await _motoService.AddAsync(moto);
 
         return CreatedAtAction(nameof(GetByLicensePlate), new { plate = moto.Plate }, moto);

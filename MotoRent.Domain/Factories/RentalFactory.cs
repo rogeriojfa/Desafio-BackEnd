@@ -1,7 +1,4 @@
-using MotoRent.Domain.Entities;
 using MotoRent.Domain.Enums;
-
-namespace MotoRent.Domain.Factories;
 
 public static class RentalFactory
 {
@@ -12,7 +9,24 @@ public static class RentalFactory
 
         var startDate = DateTime.UtcNow.Date.AddDays(1);
 
-        var (days, rate) = plan switch
+        var (planDays, dailyRate) = GetPlanDetails(plan);
+
+        return new Rental
+        {
+            Id = Guid.NewGuid(),
+            MotoId = motoId,
+            DeliverymanId = deliveryman.Id,
+            StartDate = startDate,
+            ExpectedEndDate = startDate.AddDays(planDays),
+            PlanDays = planDays,
+            DailyRate = dailyRate,
+            Status = RentalStatus.Active // Presumo que você tenha um status inicial
+        };
+    }
+
+    private static (int days, decimal rate) GetPlanDetails(RentalPlan plan)
+    {
+        return plan switch
         {
             RentalPlan.Plan7Days => (7, 30m),
             RentalPlan.Plan15Days => (15, 28m),
@@ -20,16 +34,6 @@ public static class RentalFactory
             RentalPlan.Plan45Days => (45, 20m),
             RentalPlan.Plan50Days => (50, 18m),
             _ => throw new ArgumentException("Plano de locação inválido.")
-        };
-
-        return new Rental
-        {
-            MotoId = motoId,
-            DeliverymanId = deliveryman.Id,
-            StartDate = startDate,
-            ExpectedEndDate = startDate.AddDays(days),
-            PlanDays = days,
-            DailyRate = rate
         };
     }
 }

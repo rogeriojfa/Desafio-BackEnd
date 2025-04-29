@@ -1,8 +1,6 @@
 using MotoRent.Application.Interfaces;
 using MotoRent.Domain.Entities;
 
-
-
 namespace MotoRent.Application.Services
 {
     public class MotoService(IMotoRepository motoRepository) : IMotoService

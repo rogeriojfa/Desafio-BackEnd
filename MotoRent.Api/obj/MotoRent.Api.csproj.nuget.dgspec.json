@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Projetos\\Desafio-BackEnd\\MotoRent.Api\\MotoRent.Api.csproj": {}
+    "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Api\\MotoRent.Api.csproj": {}
   },
   "projects": {
-    "c:\\Projetos\\Desafio-BackEnd\\MotoRent.Api\\MotoRent.Api.csproj": {
+    "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Api\\MotoRent.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Projetos\\Desafio-BackEnd\\MotoRent.Api\\MotoRent.Api.csproj",
+        "projectUniqueName": "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Api\\MotoRent.Api.csproj",
         "projectName": "MotoRent.Api",
-        "projectPath": "c:\\Projetos\\Desafio-BackEnd\\MotoRent.Api\\MotoRent.Api.csproj",
+        "projectPath": "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Api\\MotoRent.Api.csproj",
         "packagesPath": "C:\\Users\\roger\\.nuget\\packages\\",
-        "outputPath": "c:\\Projetos\\Desafio-BackEnd\\MotoRent.Api\\obj\\",
+        "outputPath": "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -33,11 +33,11 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "c:\\Projetos\\Desafio-BackEnd\\MotoRent.Application\\MotoRent.Application.csproj": {
-                "projectPath": "c:\\Projetos\\Desafio-BackEnd\\MotoRent.Application\\MotoRent.Application.csproj"
+              "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Application\\MotoRent.Application.csproj": {
+                "projectPath": "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Application\\MotoRent.Application.csproj"
               },
-              "c:\\Projetos\\Desafio-BackEnd\\MotoRent.Infrastructure\\MotoRent.Infrastructure.csproj": {
-                "projectPath": "c:\\Projetos\\Desafio-BackEnd\\MotoRent.Infrastructure\\MotoRent.Infrastructure.csproj"
+              "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Infrastructure\\MotoRent.Infrastructure.csproj": {
+                "projectPath": "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Infrastructure\\MotoRent.Infrastructure.csproj"
               }
             }
           }
@@ -58,6 +58,14 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
+            "BCrypt.Net-Next": {
+              "target": "Package",
+              "version": "[4.0.3, )"
+            },
+            "FluentAssertions": {
+              "target": "Package",
+              "version": "[8.2.0, )"
+            },
             "MassTransit": {
               "target": "Package",
               "version": "[8.4.0, )"
@@ -65,6 +73,14 @@
             "MassTransit.RabbitMQ": {
               "target": "Package",
               "version": "[8.4.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[9.0.4, )"
+            },
+            "Microsoft.AspNetCore.Mvc": {
+              "target": "Package",
+              "version": "[2.3.0, )"
             },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
@@ -76,6 +92,14 @@
               "target": "Package",
               "version": "[9.0.4, )"
             },
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[9.0.4, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.20.72, )"
+            },
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
               "version": "[9.0.4, )"
@@ -83,6 +107,10 @@
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[8.1.1, )"
+            },
+            "xUnit": {
+              "target": "Package",
+              "version": "[2.9.3, )"
             }
           },
           "imports": [
@@ -108,14 +136,14 @@
         }
       }
     },
-    "c:\\Projetos\\Desafio-BackEnd\\MotoRent.Application\\MotoRent.Application.csproj": {
+    "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Application\\MotoRent.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Projetos\\Desafio-BackEnd\\MotoRent.Application\\MotoRent.Application.csproj",
+        "projectUniqueName": "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Application\\MotoRent.Application.csproj",
         "projectName": "MotoRent.Application",
-        "projectPath": "c:\\Projetos\\Desafio-BackEnd\\MotoRent.Application\\MotoRent.Application.csproj",
+        "projectPath": "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Application\\MotoRent.Application.csproj",
         "packagesPath": "C:\\Users\\roger\\.nuget\\packages\\",
-        "outputPath": "c:\\Projetos\\Desafio-BackEnd\\MotoRent.Application\\obj\\",
+        "outputPath": "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -137,8 +165,8 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "c:\\Projetos\\Desafio-BackEnd\\MotoRent.Domain\\MotoRent.Domain.csproj": {
-                "projectPath": "c:\\Projetos\\Desafio-BackEnd\\MotoRent.Domain\\MotoRent.Domain.csproj"
+              "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Domain\\MotoRent.Domain.csproj": {
+                "projectPath": "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Domain\\MotoRent.Domain.csproj"
               }
             }
           }
@@ -159,6 +187,10 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
+            "BCrypt.Net-Next": {
+              "target": "Package",
+              "version": "[4.0.3, )"
+            },
             "FluentValidation": {
               "target": "Package",
               "version": "[11.11.0, )"
@@ -166,6 +198,10 @@
             "MassTransit": {
               "target": "Package",
               "version": "[8.4.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[9.0.4, )"
             }
           },
           "imports": [
@@ -188,14 +224,14 @@
         }
       }
     },
-    "c:\\Projetos\\Desafio-BackEnd\\MotoRent.Domain\\MotoRent.Domain.csproj": {
+    "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Domain\\MotoRent.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Projetos\\Desafio-BackEnd\\MotoRent.Domain\\MotoRent.Domain.csproj",
+        "projectUniqueName": "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Domain\\MotoRent.Domain.csproj",
         "projectName": "MotoRent.Domain",
-        "projectPath": "c:\\Projetos\\Desafio-BackEnd\\MotoRent.Domain\\MotoRent.Domain.csproj",
+        "projectPath": "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Domain\\MotoRent.Domain.csproj",
         "packagesPath": "C:\\Users\\roger\\.nuget\\packages\\",
-        "outputPath": "c:\\Projetos\\Desafio-BackEnd\\MotoRent.Domain\\obj\\",
+        "outputPath": "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -254,14 +290,14 @@
         }
       }
     },
-    "c:\\Projetos\\Desafio-BackEnd\\MotoRent.Infrastructure\\MotoRent.Infrastructure.csproj": {
+    "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Infrastructure\\MotoRent.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Projetos\\Desafio-BackEnd\\MotoRent.Infrastructure\\MotoRent.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Infrastructure\\MotoRent.Infrastructure.csproj",
         "projectName": "MotoRent.Infrastructure",
-        "projectPath": "c:\\Projetos\\Desafio-BackEnd\\MotoRent.Infrastructure\\MotoRent.Infrastructure.csproj",
+        "projectPath": "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Infrastructure\\MotoRent.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\roger\\.nuget\\packages\\",
-        "outputPath": "c:\\Projetos\\Desafio-BackEnd\\MotoRent.Infrastructure\\obj\\",
+        "outputPath": "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -283,11 +319,11 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "c:\\Projetos\\Desafio-BackEnd\\MotoRent.Application\\MotoRent.Application.csproj": {
-                "projectPath": "c:\\Projetos\\Desafio-BackEnd\\MotoRent.Application\\MotoRent.Application.csproj"
+              "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Application\\MotoRent.Application.csproj": {
+                "projectPath": "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Application\\MotoRent.Application.csproj"
               },
-              "c:\\Projetos\\Desafio-BackEnd\\MotoRent.Domain\\MotoRent.Domain.csproj": {
-                "projectPath": "c:\\Projetos\\Desafio-BackEnd\\MotoRent.Domain\\MotoRent.Domain.csproj"
+              "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Domain\\MotoRent.Domain.csproj": {
+                "projectPath": "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Domain\\MotoRent.Domain.csproj"
               }
             }
           }
@@ -317,6 +353,12 @@
               "version": "[8.4.0, )"
             },
             "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[9.0.4, )"
             },

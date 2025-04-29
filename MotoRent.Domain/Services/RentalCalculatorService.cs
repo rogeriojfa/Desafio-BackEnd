@@ -1,9 +1,8 @@
-using MotoRent.Domain.Entities;
 using MotoRent.Domain.Strategies;
 
 namespace MotoRent.Domain.Services;
 
-public class RentalCalculator
+public class RentalCalculatorService
 {
     public decimal Calculate(Rental rental, DateTime returnDate)
     {
