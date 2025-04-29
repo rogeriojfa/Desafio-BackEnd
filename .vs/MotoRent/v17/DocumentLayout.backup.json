@@ -3,20 +3,116 @@
   "WorkspaceRootPath": "C:\\Projetos\\Desafio-BackEnd\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A9B481A0-BB59-4F7F-8807-2318CDF5F5E7}|MotoRent.Infrastructure\\MotoRent.Infrastructure.csproj|c:\\projetos\\desafio-backend\\motorent.infrastructure\\migrations\\20250424164837_initialcreate.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A9B481A0-BB59-4F7F-8807-2318CDF5F5E7}|MotoRent.Infrastructure\\MotoRent.Infrastructure.csproj|solutionrelative:motorent.infrastructure\\migrations\\20250424164837_initialcreate.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9B481A0-BB59-4F7F-8807-2318CDF5F5E7}|MotoRent.Infrastructure\\MotoRent.Infrastructure.csproj|c:\\projetos\\desafio-backend\\motorent.infrastructure\\migrations\\20250424164837_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A9B481A0-BB59-4F7F-8807-2318CDF5F5E7}|MotoRent.Infrastructure\\MotoRent.Infrastructure.csproj|solutionrelative:motorent.infrastructure\\migrations\\20250424164837_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9B481A0-BB59-4F7F-8807-2318CDF5F5E7}|MotoRent.Infrastructure\\MotoRent.Infrastructure.csproj|c:\\projetos\\desafio-backend\\motorent.infrastructure\\migrations\\motorentdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A9B481A0-BB59-4F7F-8807-2318CDF5F5E7}|MotoRent.Infrastructure\\MotoRent.Infrastructure.csproj|solutionrelative:motorent.infrastructure\\migrations\\motorentdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9B481A0-BB59-4F7F-8807-2318CDF5F5E7}|MotoRent.Infrastructure\\MotoRent.Infrastructure.csproj|c:\\projetos\\desafio-backend\\motorent.infrastructure\\migrations\\20250429014914_fixstaticseeddata.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A9B481A0-BB59-4F7F-8807-2318CDF5F5E7}|MotoRent.Infrastructure\\MotoRent.Infrastructure.csproj|solutionrelative:motorent.infrastructure\\migrations\\20250429014914_fixstaticseeddata.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9B481A0-BB59-4F7F-8807-2318CDF5F5E7}|MotoRent.Infrastructure\\MotoRent.Infrastructure.csproj|c:\\projetos\\desafio-backend\\motorent.infrastructure\\migrations\\20250429015518_fixpasswordhash.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A9B481A0-BB59-4F7F-8807-2318CDF5F5E7}|MotoRent.Infrastructure\\MotoRent.Infrastructure.csproj|solutionrelative:motorent.infrastructure\\migrations\\20250429015518_fixpasswordhash.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9B481A0-BB59-4F7F-8807-2318CDF5F5E7}|MotoRent.Infrastructure\\MotoRent.Infrastructure.csproj|c:\\projetos\\desafio-backend\\motorent.infrastructure\\repositories\\deliverymanrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A9B481A0-BB59-4F7F-8807-2318CDF5F5E7}|MotoRent.Infrastructure\\MotoRent.Infrastructure.csproj|solutionrelative:motorent.infrastructure\\repositories\\deliverymanrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{21D64687-1A96-4F1F-801D-F210CB35E5B7}|MotoRent.Api\\MotoRent.Api.csproj|c:\\projetos\\desafio-backend\\motorent.api\\controller\\motocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{21D64687-1A96-4F1F-801D-F210CB35E5B7}|MotoRent.Api\\MotoRent.Api.csproj|solutionrelative:motorent.api\\controller\\motocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{440BD559-87FE-459D-82B1-A0DAE95F8D9C}|MotoRent.Application\\MotoRent.Application.csproj|c:\\projetos\\desafio-backend\\motorent.application\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{440BD559-87FE-459D-82B1-A0DAE95F8D9C}|MotoRent.Application\\MotoRent.Application.csproj|solutionrelative:motorent.application\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{440BD559-87FE-459D-82B1-A0DAE95F8D9C}|MotoRent.Application\\MotoRent.Application.csproj|c:\\projetos\\desafio-backend\\motorent.application\\interfaces\\service\\imotoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{440BD559-87FE-459D-82B1-A0DAE95F8D9C}|MotoRent.Application\\MotoRent.Application.csproj|solutionrelative:motorent.application\\interfaces\\service\\imotoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{440BD559-87FE-459D-82B1-A0DAE95F8D9C}|MotoRent.Application\\MotoRent.Application.csproj|c:\\projetos\\desafio-backend\\motorent.application\\services\\motoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{440BD559-87FE-459D-82B1-A0DAE95F8D9C}|MotoRent.Application\\MotoRent.Application.csproj|solutionrelative:motorent.application\\services\\motoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{99ACA83E-AD7F-4CB7-B800-E0A51F3A6368}|MotoRent.Domain\\MotoRent.Domain.csproj|c:\\projetos\\desafio-backend\\motorent.domain\\interfaces\\imotorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{99ACA83E-AD7F-4CB7-B800-E0A51F3A6368}|MotoRent.Domain\\MotoRent.Domain.csproj|solutionrelative:motorent.domain\\interfaces\\imotorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{440BD559-87FE-459D-82B1-A0DAE95F8D9C}|MotoRent.Application\\MotoRent.Application.csproj|c:\\projetos\\desafio-backend\\motorent.application\\dtos\\createmotodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{440BD559-87FE-459D-82B1-A0DAE95F8D9C}|MotoRent.Application\\MotoRent.Application.csproj|solutionrelative:motorent.application\\dtos\\createmotodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{440BD559-87FE-459D-82B1-A0DAE95F8D9C}|MotoRent.Application\\MotoRent.Application.csproj|c:\\projetos\\desafio-backend\\motorent.application\\dtos\\updatemotodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{440BD559-87FE-459D-82B1-A0DAE95F8D9C}|MotoRent.Application\\MotoRent.Application.csproj|solutionrelative:motorent.application\\dtos\\updatemotodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{440BD559-87FE-459D-82B1-A0DAE95F8D9C}|MotoRent.Application\\MotoRent.Application.csproj|c:\\projetos\\desafio-backend\\motorent.application\\dtos\\motoresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{440BD559-87FE-459D-82B1-A0DAE95F8D9C}|MotoRent.Application\\MotoRent.Application.csproj|solutionrelative:motorent.application\\dtos\\motoresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99ACA83E-AD7F-4CB7-B800-E0A51F3A6368}|MotoRent.Domain\\MotoRent.Domain.csproj|c:\\projetos\\desafio-backend\\motorent.domain\\enums\\motostatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{99ACA83E-AD7F-4CB7-B800-E0A51F3A6368}|MotoRent.Domain\\MotoRent.Domain.csproj|solutionrelative:motorent.domain\\enums\\motostatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC9A353E-4638-233D-0E95-2EA2841B47F7}|Motorent.Tests\\Motorent.tests.csproj|c:\\projetos\\desafio-backend\\motorent.tests\\motorent.tests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{CC9A353E-4638-233D-0E95-2EA2841B47F7}|Motorent.Tests\\Motorent.tests.csproj|solutionrelative:motorent.tests\\motorent.tests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC9A353E-4638-233D-0E95-2EA2841B47F7}|Motorent.Tests\\Motorent.tests.csproj|c:\\projetos\\desafio-backend\\motorent.tests\\services\\deliverymanservicetests.cs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC9A353E-4638-233D-0E95-2EA2841B47F7}|Motorent.Tests\\Motorent.tests.csproj|solutionrelative:motorent.tests\\services\\deliverymanservicetests.cs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21D64687-1A96-4F1F-801D-F210CB35E5B7}|MotoRent.Api\\MotoRent.Api.csproj|c:\\projetos\\desafio-backend\\motorent.api\\controller\\deliverymancontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21D64687-1A96-4F1F-801D-F210CB35E5B7}|MotoRent.Api\\MotoRent.Api.csproj|solutionrelative:motorent.api\\controller\\deliverymancontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9B481A0-BB59-4F7F-8807-2318CDF5F5E7}|MotoRent.Infrastructure\\MotoRent.Infrastructure.csproj|c:\\projetos\\desafio-backend\\motorent.infrastructure\\data\\motorentdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A9B481A0-BB59-4F7F-8807-2318CDF5F5E7}|MotoRent.Infrastructure\\MotoRent.Infrastructure.csproj|solutionrelative:motorent.infrastructure\\data\\motorentdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{440BD559-87FE-459D-82B1-A0DAE95F8D9C}|MotoRent.Application\\MotoRent.Application.csproj|c:\\projetos\\desafio-backend\\motorent.application\\validators\\deliverymanvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{440BD559-87FE-459D-82B1-A0DAE95F8D9C}|MotoRent.Application\\MotoRent.Application.csproj|solutionrelative:motorent.application\\validators\\deliverymanvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99ACA83E-AD7F-4CB7-B800-E0A51F3A6368}|MotoRent.Domain\\MotoRent.Domain.csproj|c:\\projetos\\desafio-backend\\motorent.domain\\entities\\deliveryman.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{99ACA83E-AD7F-4CB7-B800-E0A51F3A6368}|MotoRent.Domain\\MotoRent.Domain.csproj|solutionrelative:motorent.domain\\entities\\deliveryman.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{440BD559-87FE-459D-82B1-A0DAE95F8D9C}|MotoRent.Application\\MotoRent.Application.csproj|c:\\projetos\\desafio-backend\\motorent.application\\services\\deliverymanservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{440BD559-87FE-459D-82B1-A0DAE95F8D9C}|MotoRent.Application\\MotoRent.Application.csproj|solutionrelative:motorent.application\\services\\deliverymanservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{440BD559-87FE-459D-82B1-A0DAE95F8D9C}|MotoRent.Application\\MotoRent.Application.csproj|c:\\projetos\\desafio-backend\\motorent.application\\interfaces\\service\\ideliverymanservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{440BD559-87FE-459D-82B1-A0DAE95F8D9C}|MotoRent.Application\\MotoRent.Application.csproj|solutionrelative:motorent.application\\interfaces\\service\\ideliverymanservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21D64687-1A96-4F1F-801D-F210CB35E5B7}|MotoRent.Api\\MotoRent.Api.csproj|c:\\projetos\\desafio-backend\\motorent.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21D64687-1A96-4F1F-801D-F210CB35E5B7}|MotoRent.Api\\MotoRent.Api.csproj|solutionrelative:motorent.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{440BD559-87FE-459D-82B1-A0DAE95F8D9C}|MotoRent.Application\\MotoRent.Application.csproj|c:\\projetos\\desafio-backend\\motorent.application\\dtos\\deliverymanresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{440BD559-87FE-459D-82B1-A0DAE95F8D9C}|MotoRent.Application\\MotoRent.Application.csproj|solutionrelative:motorent.application\\dtos\\deliverymanresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{440BD559-87FE-459D-82B1-A0DAE95F8D9C}|MotoRent.Application\\MotoRent.Application.csproj|c:\\projetos\\desafio-backend\\motorent.application\\dtos\\updatedeliverymandto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{440BD559-87FE-459D-82B1-A0DAE95F8D9C}|MotoRent.Application\\MotoRent.Application.csproj|solutionrelative:motorent.application\\dtos\\updatedeliverymandto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{440BD559-87FE-459D-82B1-A0DAE95F8D9C}|MotoRent.Application\\MotoRent.Application.csproj|c:\\projetos\\desafio-backend\\motorent.application\\dtos\\createdeliverymandto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{440BD559-87FE-459D-82B1-A0DAE95F8D9C}|MotoRent.Application\\MotoRent.Application.csproj|solutionrelative:motorent.application\\dtos\\createdeliverymandto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{21D64687-1A96-4F1F-801D-F210CB35E5B7}|MotoRent.Api\\MotoRent.Api.csproj|c:\\projetos\\desafio-backend\\motorent.api\\controller\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{21D64687-1A96-4F1F-801D-F210CB35E5B7}|MotoRent.Api\\MotoRent.Api.csproj|solutionrelative:motorent.api\\controller\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{440BD559-87FE-459D-82B1-A0DAE95F8D9C}|MotoRent.Application\\MotoRent.Application.csproj|c:\\projetos\\desafio-backend\\motorent.application\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{440BD559-87FE-459D-82B1-A0DAE95F8D9C}|MotoRent.Application\\MotoRent.Application.csproj|solutionrelative:motorent.application\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{440BD559-87FE-459D-82B1-A0DAE95F8D9C}|MotoRent.Application\\MotoRent.Application.csproj|c:\\projetos\\desafio-backend\\motorent.application\\services\\rentalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -25,10 +121,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{21D64687-1A96-4F1F-801D-F210CB35E5B7}|MotoRent.Api\\MotoRent.Api.csproj|c:\\projetos\\desafio-backend\\motorent.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{21D64687-1A96-4F1F-801D-F210CB35E5B7}|MotoRent.Api\\MotoRent.Api.csproj|solutionrelative:motorent.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{21D64687-1A96-4F1F-801D-F210CB35E5B7}|MotoRent.Api\\MotoRent.Api.csproj|c:\\projetos\\desafio-backend\\motorent.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{21D64687-1A96-4F1F-801D-F210CB35E5B7}|MotoRent.Api\\MotoRent.Api.csproj|solutionrelative:motorent.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{99ACA83E-AD7F-4CB7-B800-E0A51F3A6368}|MotoRent.Domain\\MotoRent.Domain.csproj|c:\\projetos\\desafio-backend\\motorent.domain\\services\\rentalcalculatorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -54,24 +146,349 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "20250424164837_InitialCreate.Designer.cs",
+              "DocumentMoniker": "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Infrastructure\\Migrations\\20250424164837_InitialCreate.Designer.cs",
+              "RelativeDocumentMoniker": "MotoRent.Infrastructure\\Migrations\\20250424164837_InitialCreate.Designer.cs",
+              "ToolTip": "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Infrastructure\\Migrations\\20250424164837_InitialCreate.Designer.cs",
+              "RelativeToolTip": "MotoRent.Infrastructure\\Migrations\\20250424164837_InitialCreate.Designer.cs",
+              "ViewState": "AgIAAI8AAAAAAAAAAAAwwDwAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T18:03:06.962Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "20250424164837_InitialCreate.cs",
+              "DocumentMoniker": "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Infrastructure\\Migrations\\20250424164837_InitialCreate.cs",
+              "RelativeDocumentMoniker": "MotoRent.Infrastructure\\Migrations\\20250424164837_InitialCreate.cs",
+              "ToolTip": "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Infrastructure\\Migrations\\20250424164837_InitialCreate.cs",
+              "RelativeToolTip": "MotoRent.Infrastructure\\Migrations\\20250424164837_InitialCreate.cs",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAwwEwAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T18:02:43.399Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "MotoRentDbContextModelSnapshot.cs",
+              "DocumentMoniker": "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Infrastructure\\Migrations\\MotoRentDbContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "MotoRent.Infrastructure\\Migrations\\MotoRentDbContextModelSnapshot.cs",
+              "ToolTip": "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Infrastructure\\Migrations\\MotoRentDbContextModelSnapshot.cs",
+              "RelativeToolTip": "MotoRent.Infrastructure\\Migrations\\MotoRentDbContextModelSnapshot.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAwwCUAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T18:02:05.902Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "20250429014914_FixStaticSeedData.Designer.cs",
+              "DocumentMoniker": "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Infrastructure\\Migrations\\20250429014914_FixStaticSeedData.Designer.cs",
+              "RelativeDocumentMoniker": "MotoRent.Infrastructure\\Migrations\\20250429014914_FixStaticSeedData.Designer.cs",
+              "ToolTip": "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Infrastructure\\Migrations\\20250429014914_FixStaticSeedData.Designer.cs",
+              "RelativeToolTip": "MotoRent.Infrastructure\\Migrations\\20250429014914_FixStaticSeedData.Designer.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAwwCgAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T18:01:40.316Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "20250429015518_FixPasswordHash.Designer.cs",
+              "DocumentMoniker": "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Infrastructure\\Migrations\\20250429015518_FixPasswordHash.Designer.cs",
+              "RelativeDocumentMoniker": "MotoRent.Infrastructure\\Migrations\\20250429015518_FixPasswordHash.Designer.cs",
+              "ToolTip": "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Infrastructure\\Migrations\\20250429015518_FixPasswordHash.Designer.cs",
+              "RelativeToolTip": "MotoRent.Infrastructure\\Migrations\\20250429015518_FixPasswordHash.Designer.cs",
+              "ViewState": "AgIAAKUAAAAAAAAAAAAwwDoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T18:00:57.046Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IMotoService.cs",
+              "DocumentMoniker": "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Application\\Interfaces\\Service\\IMotoService.cs",
+              "RelativeDocumentMoniker": "MotoRent.Application\\Interfaces\\Service\\IMotoService.cs",
+              "ToolTip": "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Application\\Interfaces\\Service\\IMotoService.cs",
+              "RelativeToolTip": "MotoRent.Application\\Interfaces\\Service\\IMotoService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAUAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T14:01:48.661Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "MotoStatus.cs",
+              "DocumentMoniker": "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Domain\\Enums\\MotoStatus.cs",
+              "RelativeDocumentMoniker": "MotoRent.Domain\\Enums\\MotoStatus.cs",
+              "ToolTip": "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Domain\\Enums\\MotoStatus.cs",
+              "RelativeToolTip": "MotoRent.Domain\\Enums\\MotoStatus.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T14:00:26.109Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "MotoResponseDto.cs",
+              "DocumentMoniker": "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Application\\DTOs\\MotoResponseDto.cs",
+              "RelativeDocumentMoniker": "MotoRent.Application\\DTOs\\MotoResponseDto.cs",
+              "ToolTip": "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Application\\DTOs\\MotoResponseDto.cs",
+              "RelativeToolTip": "MotoRent.Application\\DTOs\\MotoResponseDto.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAEwA8AAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T13:59:36.786Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "UpdateMotoDto.cs",
+              "DocumentMoniker": "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Application\\DTOs\\UpdateMotoDto.cs",
+              "RelativeDocumentMoniker": "MotoRent.Application\\DTOs\\UpdateMotoDto.cs",
+              "ToolTip": "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Application\\DTOs\\UpdateMotoDto.cs",
+              "RelativeToolTip": "MotoRent.Application\\DTOs\\UpdateMotoDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwA0AAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T13:58:43.883Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CreateMotoDto.cs",
+              "DocumentMoniker": "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Application\\DTOs\\CreateMotoDto.cs",
+              "RelativeDocumentMoniker": "MotoRent.Application\\DTOs\\CreateMotoDto.cs",
+              "ToolTip": "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Application\\DTOs\\CreateMotoDto.cs",
+              "RelativeToolTip": "MotoRent.Application\\DTOs\\CreateMotoDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAsAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T13:58:00.992Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MotoController.cs",
+              "DocumentMoniker": "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Api\\Controller\\MotoController.cs",
+              "RelativeDocumentMoniker": "MotoRent.Api\\Controller\\MotoController.cs",
+              "ToolTip": "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Api\\Controller\\MotoController.cs",
+              "RelativeToolTip": "MotoRent.Api\\Controller\\MotoController.cs",
+              "ViewState": "AgIAADwAAAAAAAAAAAArwCEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T02:15:51.691Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "MotoService.cs",
               "DocumentMoniker": "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Application\\Services\\MotoService.cs",
               "RelativeDocumentMoniker": "MotoRent.Application\\Services\\MotoService.cs",
               "ToolTip": "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Application\\Services\\MotoService.cs",
               "RelativeToolTip": "MotoRent.Application\\Services\\MotoService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-29T03:40:21.225Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "DeliverymanValidator.cs",
+              "DocumentMoniker": "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Application\\Validators\\DeliverymanValidator.cs",
+              "RelativeDocumentMoniker": "MotoRent.Application\\Validators\\DeliverymanValidator.cs",
+              "ToolTip": "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Application\\Validators\\DeliverymanValidator.cs",
+              "RelativeToolTip": "MotoRent.Application\\Validators\\DeliverymanValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T13:48:38.644Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "DeliveryManRepository.cs",
+              "DocumentMoniker": "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Infrastructure\\Repositories\\DeliveryManRepository.cs",
+              "RelativeDocumentMoniker": "MotoRent.Infrastructure\\Repositories\\DeliveryManRepository.cs",
+              "ToolTip": "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Infrastructure\\Repositories\\DeliveryManRepository.cs",
+              "RelativeToolTip": "MotoRent.Infrastructure\\Repositories\\DeliveryManRepository.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAnwAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T13:28:31.595Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "IMotoRepository.cs",
+              "DocumentMoniker": "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Domain\\Interfaces\\IMotoRepository.cs",
+              "RelativeDocumentMoniker": "MotoRent.Domain\\Interfaces\\IMotoRepository.cs",
+              "ToolTip": "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Domain\\Interfaces\\IMotoRepository.cs",
+              "RelativeToolTip": "MotoRent.Domain\\Interfaces\\IMotoRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T14:04:31.693Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "MotoRentDbContext.cs",
+              "DocumentMoniker": "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Infrastructure\\Data\\MotoRentDbContext.cs",
+              "RelativeDocumentMoniker": "MotoRent.Infrastructure\\Data\\MotoRentDbContext.cs",
+              "ToolTip": "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Infrastructure\\Data\\MotoRentDbContext.cs",
+              "RelativeToolTip": "MotoRent.Infrastructure\\Data\\MotoRentDbContext.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAIAwwBsAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T13:48:55.991Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "DeliverymanServiceTests.cs.cs",
+              "DocumentMoniker": "C:\\Projetos\\Desafio-BackEnd\\Motorent.Tests\\Services\\DeliverymanServiceTests.cs.cs",
+              "RelativeDocumentMoniker": "Motorent.Tests\\Services\\DeliverymanServiceTests.cs.cs",
+              "ToolTip": "C:\\Projetos\\Desafio-BackEnd\\Motorent.Tests\\Services\\DeliverymanServiceTests.cs.cs",
+              "RelativeToolTip": "Motorent.Tests\\Services\\DeliverymanServiceTests.cs.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwDcAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T13:43:16.702Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Motorent.tests",
+              "DocumentMoniker": "C:\\Projetos\\Desafio-BackEnd\\Motorent.Tests\\Motorent.tests.csproj",
+              "RelativeDocumentMoniker": "Motorent.Tests\\Motorent.tests.csproj",
+              "ToolTip": "C:\\Projetos\\Desafio-BackEnd\\Motorent.Tests\\Motorent.tests.csproj",
+              "RelativeToolTip": "Motorent.Tests\\Motorent.tests.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-04-29T13:41:47.844Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "DeliverymanResponseDto.cs",
+              "DocumentMoniker": "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Application\\DTOs\\DeliverymanResponseDto.cs",
+              "RelativeDocumentMoniker": "MotoRent.Application\\DTOs\\DeliverymanResponseDto.cs",
+              "ToolTip": "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Application\\DTOs\\DeliverymanResponseDto.cs",
+              "RelativeToolTip": "MotoRent.Application\\DTOs\\DeliverymanResponseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T13:35:11.64Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "DeliverymanController.cs",
+              "DocumentMoniker": "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Api\\Controller\\DeliverymanController.cs",
+              "RelativeDocumentMoniker": "MotoRent.Api\\Controller\\DeliverymanController.cs",
+              "ToolTip": "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Api\\Controller\\DeliverymanController.cs",
+              "RelativeToolTip": "MotoRent.Api\\Controller\\DeliverymanController.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAwwCsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T13:31:45.234Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "UpdateDeliverymanDto.cs",
+              "DocumentMoniker": "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Application\\DTOs\\UpdateDeliverymanDto.cs",
+              "RelativeDocumentMoniker": "MotoRent.Application\\DTOs\\UpdateDeliverymanDto.cs",
+              "ToolTip": "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Application\\DTOs\\UpdateDeliverymanDto.cs",
+              "RelativeToolTip": "MotoRent.Application\\DTOs\\UpdateDeliverymanDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T13:34:47.704Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "CreateDeliverymanDto.cs",
+              "DocumentMoniker": "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Application\\DTOs\\CreateDeliverymanDto.cs",
+              "RelativeDocumentMoniker": "MotoRent.Application\\DTOs\\CreateDeliverymanDto.cs",
+              "ToolTip": "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Application\\DTOs\\CreateDeliverymanDto.cs",
+              "RelativeToolTip": "MotoRent.Application\\DTOs\\CreateDeliverymanDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T13:34:30.976Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "DeliverymanService.cs",
+              "DocumentMoniker": "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Application\\Services\\DeliverymanService.cs",
+              "RelativeDocumentMoniker": "MotoRent.Application\\Services\\DeliverymanService.cs",
+              "ToolTip": "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Application\\Services\\DeliverymanService.cs",
+              "RelativeToolTip": "MotoRent.Application\\Services\\DeliverymanService.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAtwBMAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T13:33:28.173Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Deliveryman.cs",
+              "DocumentMoniker": "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Domain\\Entities\\Deliveryman.cs",
+              "RelativeDocumentMoniker": "MotoRent.Domain\\Entities\\Deliveryman.cs",
+              "ToolTip": "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Domain\\Entities\\Deliveryman.cs",
+              "RelativeToolTip": "MotoRent.Domain\\Entities\\Deliveryman.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAkAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T04:25:57.569Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "IDeliverymanService.cs",
+              "DocumentMoniker": "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Application\\Interfaces\\Service\\IDeliverymanService.cs",
+              "RelativeDocumentMoniker": "MotoRent.Application\\Interfaces\\Service\\IDeliverymanService.cs",
+              "ToolTip": "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Application\\Interfaces\\Service\\IDeliverymanService.cs",
+              "RelativeToolTip": "MotoRent.Application\\Interfaces\\Service\\IDeliverymanService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAwAAABPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T13:30:15.601Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Api\\Program.cs",
+              "RelativeDocumentMoniker": "MotoRent.Api\\Program.cs",
+              "ToolTip": "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Api\\Program.cs",
+              "RelativeToolTip": "MotoRent.Api\\Program.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABAAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T01:24:32.992Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Api\\appsettings.json",
               "RelativeDocumentMoniker": "MotoRent.Api\\appsettings.json",
@@ -79,12 +496,11 @@
               "RelativeToolTip": "MotoRent.Api\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-04-29T03:07:52.159Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-29T03:07:52.159Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 27,
               "Title": "TokenService.cs",
               "DocumentMoniker": "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Application\\Services\\TokenService.cs",
               "RelativeDocumentMoniker": "MotoRent.Application\\Services\\TokenService.cs",
@@ -97,7 +513,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 28,
               "Title": "RentalService.cs",
               "DocumentMoniker": "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Application\\Services\\RentalService.cs",
               "RelativeDocumentMoniker": "MotoRent.Application\\Services\\RentalService.cs",
@@ -105,12 +521,11 @@
               "RelativeToolTip": "MotoRent.Application\\Services\\RentalService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-29T02:37:44.787Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-29T02:37:44.787Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 31,
               "Title": "RentalFactory.cs",
               "DocumentMoniker": "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Domain\\Factories\\RentalFactory.cs",
               "RelativeDocumentMoniker": "MotoRent.Domain\\Factories\\RentalFactory.cs",
@@ -118,12 +533,11 @@
               "RelativeToolTip": "MotoRent.Domain\\Factories\\RentalFactory.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAABSAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-29T02:35:16.158Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-29T02:35:16.158Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 30,
               "Title": "RentalCalculatorService.cs",
               "DocumentMoniker": "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Domain\\Services\\RentalCalculatorService.cs",
               "RelativeDocumentMoniker": "MotoRent.Domain\\Services\\RentalCalculatorService.cs",
@@ -131,12 +545,11 @@
               "RelativeToolTip": "MotoRent.Domain\\Services\\RentalCalculatorService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-29T02:34:30.819Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-29T02:34:30.819Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 32,
               "Title": "Rental.cs",
               "DocumentMoniker": "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Domain\\Entities\\Rental.cs",
               "RelativeDocumentMoniker": "MotoRent.Domain\\Entities\\Rental.cs",
@@ -144,38 +557,24 @@
               "RelativeToolTip": "MotoRent.Domain\\Entities\\Rental.cs",
               "ViewState": "AgIAABMAAAAAAAAAAAAzwAQAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-29T02:30:49.656Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-29T02:30:49.656Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MotoController.cs",
-              "DocumentMoniker": "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Api\\Controller\\MotoController.cs",
-              "RelativeDocumentMoniker": "MotoRent.Api\\Controller\\MotoController.cs",
-              "ToolTip": "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Api\\Controller\\MotoController.cs",
-              "RelativeToolTip": "MotoRent.Api\\Controller\\MotoController.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAnwB0AAABHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-29T02:15:51.691Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 26,
               "Title": "UserController.cs",
               "DocumentMoniker": "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Api\\Controller\\UserController.cs",
               "RelativeDocumentMoniker": "MotoRent.Api\\Controller\\UserController.cs",
               "ToolTip": "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Api\\Controller\\UserController.cs",
               "RelativeToolTip": "MotoRent.Api\\Controller\\UserController.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAEwCkAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-29T02:16:11.485Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 33,
               "Title": "UserRepository.cs",
               "DocumentMoniker": "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Infrastructure\\Repositories\\UserRepository.cs",
               "RelativeDocumentMoniker": "MotoRent.Infrastructure\\Repositories\\UserRepository.cs",
@@ -183,21 +582,7 @@
               "RelativeToolTip": "MotoRent.Infrastructure\\Repositories\\UserRepository.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAQwAIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-29T01:27:54.752Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Api\\Program.cs",
-              "RelativeDocumentMoniker": "MotoRent.Api\\Program.cs",
-              "ToolTip": "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Api\\Program.cs",
-              "RelativeToolTip": "MotoRent.Api\\Program.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAEwCUAAAA8AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-29T01:24:32.992Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-29T01:27:54.752Z"
             }
           ]
         }

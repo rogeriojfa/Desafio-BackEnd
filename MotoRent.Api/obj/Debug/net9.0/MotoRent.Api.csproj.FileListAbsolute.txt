@@ -167,4 +167,3 @@ C:\Projetos\Desafio-BackEnd\MotoRent.Api\bin\Debug\net9.0\xunit.assert.dll
 C:\Projetos\Desafio-BackEnd\MotoRent.Api\bin\Debug\net9.0\xunit.core.dll
 C:\Projetos\Desafio-BackEnd\MotoRent.Api\bin\Debug\net9.0\xunit.execution.dotnet.dll
 C:\Projetos\Desafio-BackEnd\motorent.api\bin\Debug\net9.0\swagger.json
-C:\Projetos\Desafio-BackEnd\MotoRent.Api\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt

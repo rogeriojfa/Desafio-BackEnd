@@ -2,9 +2,6 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using MotoRent.Application.Interfaces.Service;
 using MotoRent.DTOs;
-using MotoRent.Services;
-using System;
-using System.Threading.Tasks;
 
 namespace MotoRent.Controllers
 {

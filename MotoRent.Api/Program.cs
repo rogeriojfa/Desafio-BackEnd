@@ -23,6 +23,7 @@ builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<IRentalRepository, RentalRepository>();
 builder.Services.AddScoped<IDeliverymanRepository, DeliverymanRepository>();
+builder.Services.AddScoped<IDeliverymanService, DeliverymanService>();
 
 builder.Services.AddDbContext<MotoRentDbContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));

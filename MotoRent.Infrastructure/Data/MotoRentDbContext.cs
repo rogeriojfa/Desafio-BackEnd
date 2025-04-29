@@ -21,11 +21,11 @@ public class MotoRentDbContext : DbContext
             .IsUnique();
 
         modelBuilder.Entity<Deliveryman>()
-            .HasIndex(d => d.CNPJ)
+            .HasIndex(d => d.Cnpj)
             .IsUnique();
 
         modelBuilder.Entity<Deliveryman>()
-            .HasIndex(d => d.CNH)
+            .HasIndex(d => d.Cnh)
             .IsUnique();
 
         modelBuilder.Entity<User>().HasData(

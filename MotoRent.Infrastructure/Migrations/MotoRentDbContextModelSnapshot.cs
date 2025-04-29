@@ -31,19 +31,19 @@ namespace MotoRent.Infrastructure.Migrations
                     b.Property<DateTime>("BirthDate")
                         .HasColumnType("timestamp with time zone");
 
-                    b.Property<string>("CNH")
+                    b.Property<string>("Cnh")
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<string>("CNHImagePath")
-                        .HasColumnType("text");
-
-                    b.Property<string>("CNPJ")
-                        .IsRequired()
+                    b.Property<string>("CnhImagePath")
                         .HasColumnType("text");
 
                     b.Property<int>("CnhType")
                         .HasColumnType("integer");
+
+                    b.Property<string>("Cnpj")
+                        .IsRequired()
+                        .HasColumnType("text");
 
                     b.Property<string>("Name")
                         .IsRequired()
@@ -51,10 +51,10 @@ namespace MotoRent.Infrastructure.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("CNH")
+                    b.HasIndex("Cnh")
                         .IsUnique();
 
-                    b.HasIndex("CNPJ")
+                    b.HasIndex("Cnpj")
                         .IsUnique();
 
                     b.ToTable("Deliverymen");
@@ -159,30 +159,7 @@ namespace MotoRent.Infrastructure.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("DeliverymanId");
-
-                    b.HasIndex("MotoId");
-
                     b.ToTable("Rentals");
-                });
-
-            modelBuilder.Entity("Rental", b =>
-                {
-                    b.HasOne("Deliveryman", "Deliveryman")
-                        .WithMany()
-                        .HasForeignKey("DeliverymanId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("MotoRent.Domain.Entities.Moto", "Moto")
-                        .WithMany()
-                        .HasForeignKey("MotoId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Deliveryman");
-
-                    b.Navigation("Moto");
                 });
 #pragma warning restore 612, 618
         }

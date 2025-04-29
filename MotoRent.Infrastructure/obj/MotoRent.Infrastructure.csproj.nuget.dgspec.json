@@ -1,7 +1,7 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Infrastructure\\MotoRent.Infrastructure.csproj": {}
+    "C:\\Projetos\\Desafio-BackEnd\\motorent.infrastructure\\MotoRent.Infrastructure.csproj": {}
   },
   "projects": {
     "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Application\\MotoRent.Application.csproj": {
@@ -158,14 +158,14 @@
         }
       }
     },
-    "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Infrastructure\\MotoRent.Infrastructure.csproj": {
+    "C:\\Projetos\\Desafio-BackEnd\\motorent.infrastructure\\MotoRent.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Infrastructure\\MotoRent.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Projetos\\Desafio-BackEnd\\motorent.infrastructure\\MotoRent.Infrastructure.csproj",
         "projectName": "MotoRent.Infrastructure",
-        "projectPath": "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Infrastructure\\MotoRent.Infrastructure.csproj",
+        "projectPath": "C:\\Projetos\\Desafio-BackEnd\\motorent.infrastructure\\MotoRent.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\roger\\.nuget\\packages\\",
-        "outputPath": "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Infrastructure\\obj\\",
+        "outputPath": "C:\\Projetos\\Desafio-BackEnd\\motorent.infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

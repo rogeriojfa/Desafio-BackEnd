@@ -17,9 +17,9 @@ namespace MotoRent.Infrastructure.Migrations
                 {
                     Id = table.Column<Guid>(type: "uuid", nullable: false),
                     Name = table.Column<string>(type: "text", nullable: false),
-                    CNPJ = table.Column<string>(type: "text", nullable: false),
+                    Cnpj = table.Column<string>(type: "text", nullable: false),
                     BirthDate = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
-                    CNH = table.Column<string>(type: "text", nullable: false),
+                    Cnh = table.Column<string>(type: "text", nullable: false),
                     CnhType = table.Column<int>(type: "integer", nullable: false),
                     CNHImagePath = table.Column<string>(type: "text", nullable: true)
                 },
@@ -74,15 +74,15 @@ namespace MotoRent.Infrastructure.Migrations
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_Deliverymen_CNH",
+                name: "IX_Deliverymen_Cnh",
                 table: "Deliverymen",
-                column: "CNH",
+                column: "Cnh",
                 unique: true);
 
             migrationBuilder.CreateIndex(
-                name: "IX_Deliverymen_CNPJ",
+                name: "IX_Deliverymen_Cnpj",
                 table: "Deliverymen",
-                column: "CNPJ",
+                column: "Cnpj",
                 unique: true);
 
             migrationBuilder.CreateIndex(

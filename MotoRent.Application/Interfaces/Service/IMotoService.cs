@@ -1,3 +1,4 @@
+using MotoRent.Application.DTOs;
 using MotoRent.Domain.Entities;
 
 public interface IMotoService

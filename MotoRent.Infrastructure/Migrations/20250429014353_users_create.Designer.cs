@@ -34,14 +34,14 @@ namespace MotoRent.Infrastructure.Migrations
                     b.Property<DateTime>("BirthDate")
                         .HasColumnType("timestamp with time zone");
 
-                    b.Property<string>("CNH")
+                    b.Property<string>("Cnh")
                         .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<string>("CNHImagePath")
                         .HasColumnType("text");
 
-                    b.Property<string>("CNPJ")
+                    b.Property<string>("Cnpj")
                         .IsRequired()
                         .HasColumnType("text");
 
@@ -54,10 +54,10 @@ namespace MotoRent.Infrastructure.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("CNH")
+                    b.HasIndex("Cnh")
                         .IsUnique();
 
-                    b.HasIndex("CNPJ")
+                    b.HasIndex("Cnpj")
                         .IsUnique();
 
                     b.ToTable("Deliverymen");

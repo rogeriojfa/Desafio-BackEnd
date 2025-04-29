@@ -1,5 +1,68 @@
 [
   {
+    "ContainingType": "DeliverymanController",
+    "Method": "Create",
+    "RelativePath": "api/deliveryman",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "MotoRent.Application.DTOs.CreateDeliverymanDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DeliverymanController",
+    "Method": "GetAll",
+    "RelativePath": "api/deliveryman",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DeliverymanController",
+    "Method": "GetById",
+    "RelativePath": "api/deliveryman/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DeliverymanController",
+    "Method": "Update",
+    "RelativePath": "api/deliveryman/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "MotoRent.Application.DTOs.UpdateDeliverymanDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "MotosController",
     "Method": "Register",
     "RelativePath": "api/motos",

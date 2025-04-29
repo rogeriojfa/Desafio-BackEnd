@@ -19,12 +19,12 @@ public class DeliverymanRepository : IDeliverymanRepository
 
     public async Task<Deliveryman?> GetByCnpjAsync(string cnpj)
     {
-        return await _context.Deliverymen.FirstOrDefaultAsync(d => d.CNPJ == cnpj);
+        return await _context.Deliverymen.FirstOrDefaultAsync(d => d.Cnpj == cnpj);
     }
 
     public async Task<Deliveryman?> GetByCnhAsync(string cnh)
     {
-        return await _context.Deliverymen.FirstOrDefaultAsync(d => d.CNH == cnh);
+        return await _context.Deliverymen.FirstOrDefaultAsync(d => d.Cnh == cnh);
     }
 
     public async Task<Deliveryman?> GetByIdAsync(Guid id)
@@ -42,7 +42,7 @@ public class DeliverymanRepository : IDeliverymanRepository
         var deliveryman = await _context.Deliverymen.FindAsync(id);
         if (deliveryman != null)
         {
-            deliveryman.CNHImagePath = imagePath;
+            deliveryman.CnhImagePath = imagePath;
             await _context.SaveChangesAsync();
         }
     }

@@ -6793,11 +6793,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Projetos\\Desafio-BackEnd\\motorent.api\\MotoRent.Api.csproj",
+      "projectUniqueName": "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Api\\MotoRent.Api.csproj",
       "projectName": "MotoRent.Api",
-      "projectPath": "C:\\Projetos\\Desafio-BackEnd\\motorent.api\\MotoRent.Api.csproj",
+      "projectPath": "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Api\\MotoRent.Api.csproj",
       "packagesPath": "C:\\Users\\roger\\.nuget\\packages\\",
-      "outputPath": "C:\\Projetos\\Desafio-BackEnd\\motorent.api\\obj\\",
+      "outputPath": "C:\\Projetos\\Desafio-BackEnd\\MotoRent.Api\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
